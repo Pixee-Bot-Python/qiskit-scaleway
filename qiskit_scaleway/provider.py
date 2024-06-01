@@ -107,7 +107,7 @@ class ScalewayProvider(Provider):
 
             scaleway_backends.append(backend)
 
-        if filters is not None:
+        if filters != None:
             scaleway_backends = self.filters(scaleway_backends, filters)
 
         return filter_backends(scaleway_backends, **kwargs)
